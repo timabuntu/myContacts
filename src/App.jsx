@@ -1,8 +1,11 @@
+import GlobalStyles from './assets/styles/global';
+
 function App() {
   return (
-    <div className="App">
-      <h1>myContacts</h1>
-    </div>
+    <>
+      <GlobalStyles />
+      <h1>MyContacts</h1>
+    </>
   );
 }
 
