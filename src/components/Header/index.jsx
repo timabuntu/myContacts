@@ -7,7 +7,7 @@ function Header() {
     <Container>
       <img src={Logo} alt="MyContacts" />
       <InputSearchContainer>
-        <input type="text" placeholder="pesquisar contato" />
+        <input type="text" placeholder=" Pesquisar pelo nome..." />
       </InputSearchContainer>
     </Container>
   );
