@@ -1,9 +1,11 @@
 import { Container } from './styles';
 
+import Logo from '../../assets/images/logo.png';
+
 function Header() {
   return (
     <Container>
-      <h1>Header</h1>
+      <img src={Logo} alt="MyContacts" />
     </Container>
   );
 }
