@@ -1,9 +1,12 @@
-import { Container } from './styles';
+import { Container, Header } from './styles';
 
 function ContactsList() {
   return (
     <Container>
-      <h1>ContactsList</h1>
+      <Header>
+        <strong>3 contatos</strong>
+        <a href="/">Novo Contato</a>
+      </Header>
     </Container>
   );
 }
