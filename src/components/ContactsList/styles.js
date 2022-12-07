@@ -12,9 +12,9 @@ strong{
 }
 
 a{
-  color: #5061fc;
+  color: ${({ theme }) => theme.colors.primary.main};
   text-decoration: none;
-  border: 2px solid #5061fc;
+  border: 2px solid ${({ theme }) => theme.colors.primary.main};
   padding: 8px 16px;
   border-radius: 4px;
 }
