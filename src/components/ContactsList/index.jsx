@@ -1,4 +1,6 @@
-import { Container, Header } from './styles';
+import { ArrowUp } from 'phosphor-react';
+
+import { Container, Header, ListContainer } from './styles';
 
 function ContactsList() {
   return (
@@ -7,6 +9,17 @@ function ContactsList() {
         <strong>3 contatos</strong>
         <a href="/">Novo Contato</a>
       </Header>
+
+      <ListContainer>
+        <header>
+          <button type="button">
+            <span>Nome</span>
+            <ArrowUp />
+          </button>
+        </header>
+
+      </ListContainer>
+
     </Container>
   );
 }
