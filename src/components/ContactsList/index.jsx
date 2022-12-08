@@ -14,7 +14,7 @@ function ContactsList() {
         <header>
           <button type="button">
             <span>Nome</span>
-            <ArrowUp />
+            <ArrowUp weight="bold" size={20} />
           </button>
         </header>
 
