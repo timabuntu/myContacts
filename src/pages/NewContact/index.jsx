@@ -1,5 +1,5 @@
 export default function EditContact() {
   return (
-    'EditContactPage '
+    <h1>EditContactPage</h1>
   );
 }

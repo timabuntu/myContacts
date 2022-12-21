@@ -1,5 +1,5 @@
 export default function NewContact() {
   return (
-    'NewContactPage '
+    <h1>NewContactPage</h1>
   );
 }

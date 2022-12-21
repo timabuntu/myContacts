@@ -1,4 +1,5 @@
 import { Route, Switch } from 'react-router-dom';
+
 import NewContact from './pages/EditContact';
 import Home from './pages/Home';
 import EditContact from './pages/NewContact';
