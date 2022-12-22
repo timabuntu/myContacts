@@ -1,12 +1,15 @@
 import { ArrowUp, PencilSimple, TrashSimple } from 'phosphor-react';
 
 import {
-  Card, Container, Header, ListContainer,
+  Card, Container, Header, InputSearchContainer, ListContainer,
 } from './styles';
 
 export default function Home() {
   return (
     <Container>
+      <InputSearchContainer>
+        <input type="text" placeholder=" Pesquisar pelo nome..." />
+      </InputSearchContainer>
       <Header>
         <strong>3 contatos</strong>
         <a href="/">Novo Contato</a>
