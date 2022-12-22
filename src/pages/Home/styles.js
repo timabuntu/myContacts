@@ -8,6 +8,7 @@ export const Header = styled.header`
   display: flex;
   text-align: center;
   justify-content: space-between;
+  margin-top: 32px;
 
   strong {
     display: flex;
@@ -99,7 +100,6 @@ export const Card = styled.div`
   }
 `;
 export const InputSearchContainer = styled.div`
-  margin-top: 48px;
   width: 100%;
 
   input {

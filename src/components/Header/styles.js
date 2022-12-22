@@ -5,8 +5,8 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   margin-top: 74px;
+margin-bottom: 48px;
 
   img {
     width: 80px;
