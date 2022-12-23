@@ -1,5 +1,7 @@
+import PageHeader from '../../components/PageHeader';
+
 export default function EditContact() {
   return (
-    <h1>NewContactPage</h1>
+    <PageHeader title="Editar Thiago Mello" />
   );
 }
