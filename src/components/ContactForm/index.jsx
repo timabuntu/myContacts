@@ -1,6 +1,11 @@
+import FormGroup from '../FormGroup';
+import { Form } from './styles';
+
 function ContactForm() {
   return (
-    'ContactForm'
+    <Form>
+      <FormGroup />
+    </Form>
   );
 }
 
