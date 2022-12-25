@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { ArrowUp, PencilSimple, TrashSimple } from 'phosphor-react';
 
 import {
@@ -12,7 +14,7 @@ export default function Home() {
       </InputSearchContainer>
       <Header>
         <strong>3 contatos</strong>
-        <a href="/">Novo Contato</a>
+        <Link to="/new">Novo Contato</Link>
       </Header>
 
       <ListContainer>
@@ -35,53 +37,11 @@ export default function Home() {
           </div>
 
           <div className="actions">
-            <a href="/">
-              <PencilSimple size={20} />
-            </a>
+            <Link to="/edit/123">
+              <PencilSimple size={20} alt="Edit" />
+            </Link>
             <button type="button">
-              <TrashSimple size={20} />
-            </button>
-          </div>
-
-        </Card>
-        <Card>
-          <div className="info">
-            <div className="contact-name">
-              <strong>Thiago Mello</strong>
-              <small>instagram</small>
-            </div>
-
-            <span>thiagogv2@hotmail.com</span>
-            <span>(15)9999-9999</span>
-          </div>
-
-          <div className="actions">
-            <a href="/">
-              <PencilSimple size={20} />
-            </a>
-            <button type="button">
-              <TrashSimple size={20} />
-            </button>
-          </div>
-
-        </Card>
-        <Card>
-          <div className="info">
-            <div className="contact-name">
-              <strong>Thiago Mello</strong>
-              <small>instagram</small>
-            </div>
-
-            <span>thiagogv2@hotmail.com</span>
-            <span>(15)9999-9999</span>
-          </div>
-
-          <div className="actions">
-            <a href="/">
-              <PencilSimple size={20} />
-            </a>
-            <button type="button">
-              <TrashSimple size={20} />
+              <TrashSimple size={20} alt="Delete" />
             </button>
           </div>
 
