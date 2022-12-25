@@ -1,10 +1,14 @@
-import FormGroup from '../FormGroup';
 import { Form } from './styles';
+
+import FormGroup from '../FormGroup';
+import Input from '../Input';
 
 function ContactForm() {
   return (
     <Form>
-      <FormGroup />
+      <FormGroup>
+        <Input />
+      </FormGroup>
     </Form>
   );
 }
