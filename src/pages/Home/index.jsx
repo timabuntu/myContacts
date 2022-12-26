@@ -5,10 +5,12 @@ import { ArrowUp, PencilSimple, TrashSimple } from 'phosphor-react';
 import {
   Card, Container, Header, InputSearchContainer, ListContainer,
 } from './styles';
+import Modal from '../../components/Modal';
 
 export default function Home() {
   return (
     <Container>
+      <Modal />
       <InputSearchContainer>
         <input type="text" placeholder=" Pesquisar pelo nome..." />
       </InputSearchContainer>
