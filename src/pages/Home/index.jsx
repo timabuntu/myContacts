@@ -5,13 +5,13 @@ import { ArrowUp, PencilSimple, TrashSimple } from 'phosphor-react';
 import {
   Card, Container, Header, InputSearchContainer, ListContainer,
 } from './styles';
-import Loader from '../../components/Loader';
+// import Loader from '../../components/Loader';
 // import Modal from '../../components/Modal';
 
 export default function Home() {
   return (
     <Container>
-      <Loader />
+      {/* <Loader /> */}
       {/* <Modal danger /> */}
 
       <InputSearchContainer>
