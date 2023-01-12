@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-bind */
 import PropTypes from 'prop-types';
 
 import { useState } from 'react';
@@ -13,6 +14,23 @@ function ContactForm({ buttonLabel }) {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [category, setCategory] = useState('');
+  const [errors, setErrors] = useState([]);
+
+  function handelNameChange(event) {
+    setName(event.target.value);
+
+    if (!event.target.value) {
+      setErrors((oldState) => [
+        ...oldState, { field: 'name', message: 'Nome é obrigatório' },
+      ]);
+    } else {
+      setErrors((oldState) => oldState.filter(
+        (error) => error.field !== 'name',
+      ));
+    }
+  }
+
+  console.log(errors);
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -30,7 +48,7 @@ function ContactForm({ buttonLabel }) {
         <Input
           placeholder="Nome"
           value={name}
-          onChange={(event) => setName(event.target.value)}
+          onChange={handelNameChange}
         />
       </FormGroup>
 
