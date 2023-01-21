@@ -35,6 +35,9 @@ export default function useErrors() {
   // Retorna as funções "setError", "removeError"
   // e "getErrorMessageByFieldName" para serem usadas fora desta função
   return {
-    setError, removeError, getErrorMessageByFieldName,
+    setError,
+    removeError,
+    getErrorMessageByFieldName,
+    errors,
   };
 }
