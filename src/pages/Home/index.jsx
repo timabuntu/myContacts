@@ -58,10 +58,26 @@ export default function Home() {
   );
 }
 
-fetch('http://localhost:3000/contacts')
+fetch('http://localhost:3000/contacts', {
+  method: 'DELETE',
+  headers: new Headers({
+    'X-App-ID': '123',
+  }),
+})
   .then((response) => {
     console.log('response', response);
   })
   .catch((error) => {
     console.log('erro', error);
   });
+
+// SOP -> Same Origin Policy -> Política de Mesma Origem
+// CORS -> Cross Origin Resource Sharing -> Compartilhamento de Recursos entre Origens Diferentes
+
+// Origem: protocolo + domínio + porta
+
+// Saída: http://localhost:5173
+// Destino: http://localhost:3000
+
+// Preflight -> Pré-voo
+// OPTIONS -> http://localhost:3000/contacts
